@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- <AbilityDef>
+        <defName>DraconicFlight</defName>
+        <label>draconic flight</label>
+        <description>Jet goes up, Icarus comes down.</description>
+		<iconPath>UserInterface/Abilities/Fly</iconPath>
+        <abilityClass>DD.Ability_Base</abilityClass>
+        <cooldownTicksRange>1800~5200</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+			<range>40</range>
+			<requireLineOfSight>false</requireLineOfSight>
+			<drawHighlightWithLineOfSight>false</drawHighlightWithLineOfSight>
+			<warmupTime>1</warmupTime>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+        </verbProperties>
+        <comps>
+			<li Class="DD.AbilityCompProperties_Flight">
+				<compClass>DD.AbilityComp_Flight</compClass>
+				<range>100</range>
+			</li>
+			<li Class="DD.AbilityCompProperties_Cooldown">
+                <compClass>DD.AbilityComp_Cooldown</compClass>
+				<cooldownTicksRange>8000</cooldownTicksRange>
+			</li>
+			<li Class="DD.AbilityCompProperties_RequireBodyPart">
+				<compClass>DD.AbilityComp_RequireBodyPart</compClass>
+				<missing>true</missing>
+				<bodyPart>Wing</bodyPart>
+			</li>
+        </comps>
+    </AbilityDef> -->
+
+	 <ThingDef>
+		<defName>WingedFlyer</defName>
+		<label>dragon in flight</label>
+		<thingClass>DD.WingedFlyer</thingClass>
+		<category>Ethereal</category>
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Weather</altitudeLayer>
+		<useHitPoints>false</useHitPoints>
+		<destroyOnDrop>true</destroyOnDrop>
+		<tradeability>None</tradeability>
+	</ThingDef> 
+	<ThingDef ParentName="PawnFlyerBase">
+		<defName>DD_DragonJumpFlyer</defName>
+		<thingClass>VFECore.Abilities.AbilityPawnFlyer</thingClass>
+		<pawnFlyer>
+			<flightDurationMin>0.5</flightDurationMin>
+			<flightSpeed>15</flightSpeed>
+		</pawnFlyer>
+	</ThingDef>
+
+	<!-- <AbilityDef>
+		<defName>DD_Longjump_Dragon</defName>
+		<label>mecha dragon longjump</label>
+		<description>Jump to a distant location using special wings.</description>
+		<iconPath>UI/Abilities/MechLongJump</iconPath>
+		<cooldownTicksRange>180</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<verbProperties>
+		  <verbClass>Verb_CastAbilityJump</verbClass>
+		  <label>jump</label>
+		  <violent>false</violent>
+		  <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+		  <warmupTime>0.1</warmupTime>
+		  <minRange>5.9</minRange>
+		  <range>25</range>
+		  <requireLineOfSight>false</requireLineOfSight>
+		  <soundCast>Longjump_Jump</soundCast>
+		  <soundLanding>Longjump_Land</soundLanding>
+		  <flyWithCarriedThing>false</flyWithCarriedThing>
+		  <targetParams>
+			<canTargetLocations>true</canTargetLocations>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+		  </targetParams>
+		</verbProperties>
+	  </AbilityDef>  -->
+
+	  <!-- <AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>DD_IncineratorBurner_FireBreath</defName>
+		<label>Fire Breath Incinerator</label>
+		<description>Expend a pressurized bioferrite charge to create a massive cone of flame.</description>
+		<iconPath>UI/Abilities/Burner</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>90~180</cooldownTicksRange> 
+		<warmupStartSound>DragonBreathShot</warmupStartSound>
+		<verbProperties>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>27</range>
+			<warmupTime>.5</warmupTime>
+			<soundCast>DragonBreathFire</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0.2, 0)</li>
+					<li>(0.4, 1)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>28</range>
+				<lineWidthEnd>14</lineWidthEnd>
+				<filthDef>Filth_Ash</filthDef>
+				<damAmount>24</damAmount>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+			<li Class="DD.CompProperties_AbilityBurner_DragonFire">
+				<numStreams>40</numStreams>
+				<range>30</range>
+				<coneSizeDegrees>15</coneSizeDegrees>
+				<moteDef>DD_Mote_IncineratorBurst_Fire</moteDef>
+				<barrelOffsetDistance>6</barrelOffsetDistance>
+				<sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+				<lifespanNoise>80</lifespanNoise>
+				<rangeNoise>.6</rangeNoise>
+				<effecterDef>DD_BurnerUsed_Fire</effecterDef>
+			</li>
+		</comps>
+	</AbilityDef> -->
+<!-- 
+	<AbilityDef MayRequire="Ludeon.RimWorld.Anomaly">
+		<defName>DD_IncineratorBurner_NecroBreath</defName>
+		<label>Necro Breath</label>
+		<cooldownTicksRange>90~180</cooldownTicksRange>
+		<description>Expend a pressurized bioferrite charge to create a massive cone of flame.</description>
+		<iconPath>UI/Abilities/Burner</iconPath>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>DragonBreathShot</warmupStartSound>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>31</range>
+			<warmupTime>.5</warmupTime>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<soundCast>DragonBreathFire</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetBuildings>true</canTargetBuildings>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+				<points>
+					<li>(0, 0)</li>
+					<li>(0, 0)</li>
+				</points>
+			</flammabilityAttachFireChanceCurve>
+		</verbProperties>
+		<comps>
+
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>28</range>
+				<lineWidthEnd>14</lineWidthEnd>
+				<filthDef>Filth_Ash</filthDef>
+				<damAmount>24</damAmount>
+				<canHitFilledCells>true</canHitFilledCells>
+			</li>
+			<li Class="DD.CompProperties_AbilityBurner_DragonNecro" MayRequire="Ludeon.RimWorld.Anomaly">
+				<numStreams>25</numStreams>
+				<range>13</range> 
+				<coneSizeDegrees>15</coneSizeDegrees>
+				<moteDef>DD_Mote_IncineratorBurst_Necro</moteDef>
+				<barrelOffsetDistance>12</barrelOffsetDistance>
+				<sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+				<lifespanNoise>40</lifespanNoise>
+				<rangeNoise>.4</rangeNoise>
+				<effecterDef>DD_BurnerUsed_NecroPurple</effecterDef>
+
+
+			</li>
+		</comps>
+	</AbilityDef> -->
+		<!-- <AbilityDef>
+		<defName>DD_Flamethrower_Dragon_Fire</defName>
+		<label>Flamer</label>
+		<description>Flamer</description>
+		<writeCombatLog>True</writeCombatLog>
+		<iconPath>UI/Abilities/FireSpew</iconPath>
+		<showPsycastEffects>False</showPsycastEffects>
+		<aiCanUse>true</aiCanUse>
+		<warmupStartSound>FireSpew_Warmup</warmupStartSound>
+		<cooldownTicksRange>600</cooldownTicksRange> 
+		<verbProperties>
+			<verbClass>Verb_ArcSprayIncinerator</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<label>Fire Beam</label>
+			<warmupTime>1.5</warmupTime>
+			<range>27.9</range>
+			<minRange>1.9</minRange>
+			<beamFullWidthRange>7</beamFullWidthRange>
+			<burstShotCount>55</burstShotCount>
+			<showBurstShotStats>false</showBurstShotStats>
+			<requireLineOfSight>true</requireLineOfSight>
+			<beamWidth>8</beamWidth>
+			<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+			<beamDamageDef>Flame</beamDamageDef>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<soundCastBeam>Flamethrower_Firing</soundCastBeam>
+			<beamGroundFleckDef>DD_Fleck_IncineratorBeamBurn_Dragon</beamGroundFleckDef>
+			<beamFleckChancePerTick>0.66</beamFleckChancePerTick>
+			<beamMaxDeviation>.5</beamMaxDeviation>
+			<beamCurvature>0</beamCurvature>
+			<beamEndEffecterDef>DD_IncineratorBeam_End_Dragon</beamEndEffecterDef> 
+			<beamChanceToStartFire>0.05</beamChanceToStartFire>
+			<beamFireSizeRange>0.75~0.99</beamFireSizeRange>
+			<beamStartOffset>.4</beamStartOffset>
+			<beamHitsNeighborCells>true</beamHitsNeighborCells>
+			<beamCantHitWithinMinRange>true</beamCantHitWithinMinRange>
+			<beamHitsNeighborCellsRequiresLOS>true</beamHitsNeighborCellsRequiresLOS>
+			<beamSetsGroundOnFire>true</beamSetsGroundOnFire>
+			<ai_BeamIsIncendiary>true</ai_BeamIsIncendiary>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<beamLineFleckDef>DD_HeatDistortion</beamLineFleckDef>
+			<commonality>.8</commonality>
+			<highlightColor>(107, 3, 252)</highlightColor>
+			<secondaryHighlightColor>(169, 3, 252)</secondaryHighlightColor>
+			<aimingLineMote>Mote_FleshmelterBolt_Aim</aimingLineMote>
+			<aimingChargeMote>Mote_FleshmelterBolt_Charge</aimingChargeMote> 
+			<aimingChargeMoteOffset>1.07</aimingChargeMoteOffset>
+			<aimingLineMoteFixedLength>15.9</aimingLineMoteFixedLength>
+			<aimingTargetMote>Mote_FleshmelterBolt_Target</aimingTargetMote> 
+			
+			<beamLineFleckChanceCurve>
+			  <points>
+				<li>(0, 0)</li>
+				<li>(0.65, 0.02)</li>
+				<li>(1, .9)</li>
+			  </points>
+			</beamLineFleckChanceCurve>
+			<targetParams>
+			  <canTargetPawns>true</canTargetPawns>
+			  <canTargetBuildings>true</canTargetBuildings>
+			  <canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<flammabilityAttachFireChanceCurve>
+			  <points>
+				<li>(0.6, 0)</li>
+				<li>(0.7, 0.2)</li>
+				<li>(1.2, 0.8)</li>
+			  </points>
+			</flammabilityAttachFireChanceCurve>
+			<rangedFireRulepack>Combat_RangedFlamethrower</rangedFireRulepack>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+			  <range>7.9</range>
+			  <lineWidthEnd>3</lineWidthEnd>
+			  <filthDef>Filth_FlammableBile</filthDef>
+			  <effecterDef>Fire_Spew</effecterDef>
+			  <canHitFilledCells>true</canHitFilledCells>
+			</li>
+			<li Class="CompProperties_AbilityBurner">
+				<numStreams>15</numStreams>
+				<range>11</range>
+				<coneSizeDegrees>7.2</coneSizeDegrees>
+				<moteDef>Mote_IncineratorBurst</moteDef>
+				<barrelOffsetDistance>6</barrelOffsetDistance>
+				<sizeReductionDistanceThreshold>8</sizeReductionDistanceThreshold>
+				<lifespanNoise>40</lifespanNoise>
+				<rangeNoise>.4</rangeNoise>
+				<effecterDef>BurnerUsed</effecterDef>
+			  </li>
+		  </comps>
+	  </AbilityDef> -->
+</Defs> 
