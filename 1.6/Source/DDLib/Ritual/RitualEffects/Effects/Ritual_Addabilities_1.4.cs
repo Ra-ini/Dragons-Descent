@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
-using VFECore.Abilities;
+using VEF.Abilities;
 
 namespace DD
 {
@@ -23,7 +23,7 @@ namespace DD
                 CompAbilities abilitiesComp = pawn.TryGetComp<CompAbilities>();
                 if (abilitiesComp != null)
                 {
-                    VFECore.Abilities.AbilityDef DD_DragonBreath_Fire = DefDatabase<VFECore.Abilities.AbilityDef>.GetNamed("DD_DragonBreath_Fire");
+                    VEF.Abilities.AbilityDef DD_DragonBreath_Fire = DefDatabase<VEF.Abilities.AbilityDef>.GetNamed("DD_DragonBreath_Fire");
                     if (DD_DragonBreath_Fire == null)
                     {
                         Log.ErrorOnce("Could not find the Dragon_Breath ability.", 18463572);
@@ -32,7 +32,7 @@ namespace DD
                     {
                         abilitiesComp.GiveAbility(DD_DragonBreath_Fire);
                     }
-                    VFECore.Abilities.AbilityDef DD_DragonJump = DefDatabase<VFECore.Abilities.AbilityDef>.GetNamed("DD_DraconicFlight");
+                    VEF.Abilities.AbilityDef DD_DragonJump = DefDatabase<VEF.Abilities.AbilityDef>.GetNamed("DD_DraconicFlight");
                     if (DD_DragonJump == null)
                     {
                         Log.ErrorOnce("Could not find the DragonJump ability.", 18463572);
@@ -41,7 +41,7 @@ namespace DD
                     {
                         abilitiesComp.GiveAbility(DD_DragonJump);
                     }
-                    VFECore.Abilities.AbilityDef DD_DragonSpit_Fire = DefDatabase<VFECore.Abilities.AbilityDef>.GetNamed("DD_DragonSpit_Fire");
+                    VEF.Abilities.AbilityDef DD_DragonSpit_Fire = DefDatabase<VEF.Abilities.AbilityDef>.GetNamed("DD_DragonSpit_Fire");
                     if (DD_DragonSpit_Fire == null)
                     {
                         Log.ErrorOnce("Could not find the Dragon Spit ability.", 18463572);

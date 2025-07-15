@@ -157,7 +157,7 @@ public class DD_Fire : AttachableThing, ISizeReporter
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         ticksSinceSpawn++;
         if (lastFireCountUpdateTick != Find.TickManager.TicksGame)
@@ -281,11 +281,11 @@ public class DD_Fire : AttachableThing, ISizeReporter
                 num *= 0.15f;
             }
             GenTemperature.PushHeat(base.Position, base.Map, num);
-            if (Rand.Value < 0.4f)
-            {
-                float radius = fireSize * 3f;
-                SnowUtility.AddSnowRadial(base.Position, base.Map, radius, 0f - fireSize * 0.1f);
-            }
+            // if (Rand.Value < 0.4f)
+            // {
+            //     float radius = fireSize * 3f;
+            //     SnowUtility.AddSnowRadial(base.Position, base.Map, radius, 0f - fireSize * 0.1f);
+            // }
             fireSize += 0.00055f * flammabilityMax * 150f;
             if (fireSize > 1.75f)
             {

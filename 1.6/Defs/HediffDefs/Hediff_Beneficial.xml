@@ -91,7 +91,7 @@
 		<defaultLabelColor>(0.3, 0.4, 0.7)</defaultLabelColor>
 		<initialSeverity>0.0001</initialSeverity>
 		<comps>
-			<li Class="AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
+			<li Class="VEF.AnimalBehaviours.HediffCompProperties_ThoughtEffecter">
 				<radius>10</radius>
 				<tickInterval>2000</tickInterval>
 				<thoughtDef>DD_DragonNuzzled</thoughtDef>

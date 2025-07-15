@@ -126,7 +126,7 @@ namespace DD
             }
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (InnerPawn == null)
             {
@@ -150,10 +150,10 @@ namespace DD
             {
                 Update();
 
-                if (container.Any)
-                {
-                    container.ThingOwnerTick();
-                }
+                // if (container.Any)
+                // {
+                //     container.ThingOwnerTick();
+                // }
             }
 
             ticks++;

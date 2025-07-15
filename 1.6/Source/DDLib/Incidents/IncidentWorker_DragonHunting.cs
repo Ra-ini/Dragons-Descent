@@ -30,7 +30,7 @@ namespace DD
                 return minPawnNutrition <= nutrition && nutrition <= baseHerdNutrition;
             });
             defs = defs.Where(def => def.RaceProps.Animal && def.RaceProps.herdAnimal && !def.RaceProps.predator ); //Filter out pawns that are not animals, are not herd animals, and arnt predators.
-            defs = defs.Where(def => def.RaceProps.wildness <= maxWildness); //Filter out pawns that have more wildness than the threshold.
+            defs = defs.Where(def => def.race.GetStatValueAbstract(StatDefOf.Wildness) <= maxWildness); //Filter out pawns that have more wildness than the threshold.
             defs = defs.Where(def => map.mapTemperature.SeasonAndOutdoorTemperatureAcceptableFor(def.race)); //Filter out pawns that don't like the current temperature/season.
              
             if (debug)

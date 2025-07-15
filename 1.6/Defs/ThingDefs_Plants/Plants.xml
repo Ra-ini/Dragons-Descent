@@ -65,7 +65,7 @@
       <texPath>Things/Plant/JeweledRhizome</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <hideAtSnowDepth>0.5</hideAtSnowDepth>
+    <hideAtSnowOrSandDepth>0.5</hideAtSnowOrSandDepth>
     <ingestible />
     <plant>
       <fertilityMin>0.25</fertilityMin>

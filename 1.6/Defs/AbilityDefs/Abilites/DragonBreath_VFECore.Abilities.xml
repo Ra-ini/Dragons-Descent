@@ -3,7 +3,7 @@
 
     
     <!-- DragonBreath -->
-    <VFECore.Abilities.AbilityDef>
+    <VEF.Abilities.AbilityDef>
         <defName>DD_DragonSpit_Fire</defName>
         <label>Dragon Fire Spit</label>
         <description>Pew</description>
@@ -14,7 +14,7 @@
           <canTargetMechs>true</canTargetMechs>
         </targetingParameters> 
         <abilityClass>DD.Ability_ShootProjectile_Multiple_Dragon</abilityClass>
-        <!-- <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass> -->
+        <!-- <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass> -->
         <targetMode>Pawn</targetMode>
         <castTime>75</castTime>
         <range>26</range>
@@ -32,15 +32,15 @@
          </li>
         </modExtensions>
 
-      </VFECore.Abilities.AbilityDef>
+      </VEF.Abilities.AbilityDef>
     
   <!-- DragonBreath_Fire -->
 
-      <VFECore.Abilities.AbilityDef>
+      <VEF.Abilities.AbilityDef>
         <defName>DD_DragonBreath_Fire</defName>
         <label>Dragon Fire Breath</label>
         <description>Rawr</description>
-        <!-- <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass> -->
+        <!-- <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass> -->
         <abilityClass>DD.Ability_ShootProjectile_Dragon</abilityClass>
         <targetMode>Pawn</targetMode>
         <targetingParameters>
@@ -65,8 +65,9 @@
             <projectile>DD_Projectile_DragonBreath_Fire</projectile>
          </li>
         </modExtensions>
-      </VFECore.Abilities.AbilityDef> 
-      <VFECore.Abilities.AbilityDef>
+      </VEF.Abilities.AbilityDef> 
+
+      <VEF.Abilities.AbilityDef>
         <defName>DD_DragonJump</defName>
         <label>Dragon Jump</label>
         <description>This hybrid can charge into combat, quickly closing the distance between it and its enemies and damaging them.</description>
@@ -87,9 +88,9 @@
         <modExtensions>
             <li Class="DD.DisabledAbilityExtension" />
         </modExtensions>
-      </VFECore.Abilities.AbilityDef>
+      </VEF.Abilities.AbilityDef>
       <!-- 
-      <VFECore.Abilities.AbilityDef>
+      <VEF.Abilities.AbilityDef>
         <defName>DD_DragonLightning</defName>
         <label>Dragon Fire Breath</label>
         <description>Rawr</description>
@@ -105,20 +106,20 @@
         <castSound>DragonBreathShot</castSound>
         <showUndrafted>true</showUndrafted>
         <modExtensions>
-          <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+          <li Class="VEF.Abilities.AbilityExtension_Projectile">
              <projectile>DD_Projectile_DragonBreath_Lightning</projectile>
           </li>
         </modExtensions>
-      </VFECore.Abilities.AbilityDef> 
+      </VEF.Abilities.AbilityDef> 
  -->
         <!-- DragonBreath_Frost -->
 
 
-<!--       <VFECore.Abilities.AbilityDef>
+<!--       <VEF.Abilities.AbilityDef>
         <defName>DD_DragonBreath_Frost</defName>
         <label>Dragon Frost Breath</label>
         <description>Frost Breath</description>
-        <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+        <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
         <targetingParameters>
           <canTargetSelf>false</canTargetSelf>
           <canTargetBuildings>true</canTargetBuildings>
@@ -134,18 +135,18 @@
         <iconPath>AnimalProjectile/Animations/IceDAbilities/Projectile_Ice</iconPath>
         <showUndrafted>true</showUndrafted>
         <modExtensions>
-          <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+          <li Class="VEF.Abilities.AbilityExtension_Projectile">
              <projectile>DD_Projectile_DragonBreath_Frost</projectile>
           </li>
         </modExtensions>
-      </VFECore.Abilities.AbilityDef>  -->
+      </VEF.Abilities.AbilityDef>  -->
 
 
-      <VFECore.Abilities.AbilityDef>
+      <!-- <VEF.Abilities.AbilityDef>
         <defName>DD_DragonBreath_ElectroPulse</defName>
         <label>electro-magnetic pulse</label>
         <description>Generate a large EMP explosion around yourself, disabling all electronics in radius.</description>
-        <abilityClass>VFECore.Abilities.Ability_Explode</abilityClass>
+        <abilityClass>VEF.Abilities.Ability_Explode</abilityClass>
         <targetMode>Self</targetMode>
         <targetingParameters>
           <canTargetSelf>true</canTargetSelf>
@@ -157,17 +158,17 @@
         <chance>1</chance>
         <showUndrafted>true</showUndrafted>
         <modExtensions>
-          <li Class="VFECore.Abilities.AbilityExtension_Explosion">
+          <li Class="VEF.Abilities.AbilityExtension_Explosion">
             <explosionDamageDef>EMP</explosionDamageDef>
             <explosionRadius>39.9</explosionRadius>
             <explosionDamageAmount>50</explosionDamageAmount>
             <onCaster>true</onCaster>
           </li>
         </modExtensions>
-      </VFECore.Abilities.AbilityDef>
+      </VEF.Abilities.AbilityDef> -->
 
     <!-- DD_Beam-->
-    <!-- <VFECore.Abilities.AbilityDef>
+    <!-- <VEF.Abilities.AbilityDef>
       <defName>DD_DragonBeam_Frost</defName>
       <label>Dragon Beam</label>
       <description>BRRRRRRRRRRRRRRRRRRR</description>
@@ -185,14 +186,14 @@
       <targetMode>Location</targetMode>
       <castSound>DragonBreathShot</castSound>
       <modExtensions>
-        <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+        <li Class="VEF.Abilities.AbilityExtension_Projectile">
 
           <projectile>DD_Projectile_DragonBeam</projectile>
         </li>
       </modExtensions>
-    </VFECore.Abilities.AbilityDef> -->
+    </VEF.Abilities.AbilityDef> -->
 
-      <!-- <VFECore.Abilities.AbilityDef>
+      <!-- <VEF.Abilities.AbilityDef>
         <defName>DD_Longjump_Dragon</defName>
         <label>super jump</label>
         <description>Jump over a short distance (10 cells) within line of sight to close the distance to the enemy.</description>
@@ -203,16 +204,16 @@
         <cooldownTime>180</cooldownTime>
         <castTime>15</castTime>
         <chance>0</chance>
-      </VFECore.Abilities.AbilityDef> -->
+      </VEF.Abilities.AbilityDef> -->
 
-      <!-- <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+      <!-- <VEF.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>DD_IceBreath</defName>
         <label>breathe ice</label>
         <description>Breathe forward a stream of psychic entropy, the resulting cold cutting and inducing hypothermia scaling with the distance to the target.</description>
         <iconPath>AnimalProjectile/DragonFire</iconPath>
       <range>12.9</range>
       <castTime>6</castTime>
-      <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
+      <abilityClass>VEF.Abilities.Ability_ShootProjectile</abilityClass>
       <targetingParameters>
         <canTargetLocations>true</canTargetLocations>
             <canTargetPawns>true</canTargetPawns>
@@ -221,15 +222,15 @@
       <castSound>DragonBreathShot</castSound>
       <goodwillImpact>-15</goodwillImpact>
         <modExtensions>
-          <li Class="VFECore.Abilities.AbilityExtension_Projectile">
+          <li Class="VEF.Abilities.AbilityExtension_Projectile">
 
             <projectile>VPE_IceBreathe</projectile>
           </li>
         </modExtensions>
-      </VFECore.Abilities.AbilityDef> -->
+      </VEF.Abilities.AbilityDef> -->
 
 
-    <VFECore.Abilities.AbilityDef>
+    <VEF.Abilities.AbilityDef>
         <defName>DD_DraconicFlight</defName>
         <label>winged flight</label>
         <description>Jet goes up, Icarus comes down.</description>
@@ -270,6 +271,6 @@
                 <minAge>35</minAge>
             </li>
         </modExtensions>
-    </VFECore.Abilities.AbilityDef>
+    </VEF.Abilities.AbilityDef>
 
 </Defs>

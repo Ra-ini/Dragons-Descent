@@ -4,9 +4,9 @@
 		<defName>DD_Knockback</defName>
 		<deathMessage>{0} has been smashed to death.</deathMessage>
 		<label>Dragon attack</label>
-		<workerClass>VFECore.DamageWorker_PushBackAttackMelee</workerClass>
+		<workerClass>VEF.Weapons.DamageWorker_PushBackAttackMelee</workerClass>
 		<modExtensions>
-			<li Class="VFECore.DamageExtension">
+			<li Class="VEF.Weapons.DamageExtension">
 				<pushBackDistance>3~5</pushBackDistance>
 			</li>
 		</modExtensions>

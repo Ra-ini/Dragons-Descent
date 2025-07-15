@@ -7,7 +7,8 @@ using UnityEngine;
 using Verse;
 using Verse.Noise;
 using Verse.Sound;
-using VFECore;
+using VEF;
+using VEF.Weapons;
 
 
 namespace DD

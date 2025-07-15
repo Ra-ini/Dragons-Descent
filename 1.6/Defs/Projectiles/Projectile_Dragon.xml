@@ -5,7 +5,7 @@
 	<!-- <ThingDef ParentName="BaseBullet">
 		<defName>DD_Projectile_DragonBeam</defName>
 		<label>eye blast</label>
-		<thingClass>VFECore.BeamProjectile</thingClass>
+		<thingClass>VEF.Weapons.BeamProjectile</thingClass>
 		<drawOffscreen>true</drawOffscreen>
 		<graphicData>
 			<texPath>AnimalProjectile/EyeBlastFirebeam</texPath>
@@ -21,10 +21,10 @@
 			<explosionRadius>3</explosionRadius>
 		</projectile>
 		<comps>
-			<li><compClass>VFECore.Abilities.CompAbilityProjectile</compClass></li>
+			<li><compClass>VEF.Abilities.CompAbilityProjectile</compClass></li>
 		</comps>
 		<modExtensions>
-			<li Class="VFECore.ProjectileExtension">
+			<li Class="VEF.Weapons.ProjectileExtension">
 				<flashIntensity>100</flashIntensity>
 				<hitFleck>ArcLargeEMP_A</hitFleck>
 			</li>
@@ -147,7 +147,7 @@
 			<graphicClass>DD.Graphic_FlickerEffect</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
-		<thingClass>ExplosiveTrailsEffect.Projectile_FlameThrower</thingClass>
+		<thingClass>VEF.Weapons.Projectile_FlameThrower</thingClass>
 		<projectile>
 		  <!-- <drawSize>1.35</drawSize> -->
 		  <speed>20</speed>
@@ -188,11 +188,11 @@
 
 
 
-	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>DD_Projectile_DragonBreath_Fire</defName>
 		<label>Fire Breath</label>
 		<thingClass>DD.ExpandableProjectile_DragonBreath_Fire</thingClass>
-		<!-- <thingClass>VFECore.FlamethrowProjectile</thingClass> -->
+		<!-- <thingClass>VEF.Weapons.FlamethrowProjectile</thingClass> -->
 		<graphicData>
 			<texPath>AnimalProjectile/Animations/FireDAbilities/Projectile_Fire</texPath>
 			<!-- main texture series, it's just a folder with textures. it sorts them alphabetically, there is no need to fill in A-Z at the end and you are also not limited to all letters of the alphabet, 01, 02 will do -->
@@ -253,15 +253,15 @@
 		<reachMaxRangeAlways>false</reachMaxRangeAlways>
 		<!-- <reachMaxRangeAlways>true</reachMaxRangeAlways> -->
 		<minDistanceToAffect>1</minDistanceToAffect> 
-	</VFECore.ExpandableProjectileDef>
+	</VEF.Weapons.ExpandableProjectileDef>
 
-	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>DD_Projectile_DragonBreath_Frost</defName>
 		<label>Ice Breath</label>
 		<!-- <thingClass>DD.VEF_DD_DraconicFlameProjectile</thingClass> -->
 		<!-- <thingClass>DD.IceBreathProjectileExpandable</thingClass> -->
 		<thingClass>DD.Projectiles.ExpandableProjectile_DragonBreath_Frost</thingClass>
-		<!-- <thingClass>VFECore.FlamethrowProjectile</thingClass> -->
+		<!-- <thingClass>VEF.Weapons.FlamethrowProjectile</thingClass> -->
 		<!-- this class inherited from the ExpandableProjectile class, it inherits the DoDamage method, which is responsible for the appearance of fire and damaging all things under the projectile -->
 		<!-- <comps>
 			<li Class="CompProperties_Glower">
@@ -340,7 +340,7 @@
 		</comps>
 
 		
-	</VFECore.ExpandableProjectileDef>
+	</VEF.Weapons.ExpandableProjectileDef>
 
 
 	<ThingDef>
@@ -353,7 +353,7 @@
 		<neverMultiSelect>True</neverMultiSelect>
 		<!-- <thingClass>DD.Projectile_Explode</thingClass> -->
 		<!-- <thingClass>DD.Projectile_Fire</thingClass> -->
-		<thingClass>VFEMech.TeslaProjectile</thingClass>
+		<thingClass>VEF.Weapons.TeslaProjectile</thingClass>
 		<graphicData>
 			<shaderType>TransparentPostLight</shaderType>
 			<texPath>AnimalProjectile/Lightning</texPath>
@@ -379,7 +379,7 @@
 			</extraDamages>
 		</projectile>
 		<modExtensions>
-			<li Class="VFEMech.TeslaChainingProps">
+			<li Class="VEF.Weapons.TeslaChainingProps">
 				<maxBounceCount>6</maxBounceCount>
 				<damageDef>DraconicFlame</damageDef> <!--first target only?-->
 				<explosionDamageDef>Smoke</explosionDamageDef>

@@ -104,7 +104,7 @@
 	<DamageDef>
 		<defName>DraconicBlunt</defName>
 		<workerClass>DamageWorker_Blunt</workerClass>
-		<!-- <workerClass>AnimalBehaviours.DamageWorker_ExtraDamageMechanoids</workerClass> -->
+		<!-- <workerClass>VEF.AnimalBehaviours.DamageWorker_ExtraDamageMechanoids</workerClass> -->
         <!-- <workerClass>DD.DamageWorker_ApplyEffect</workerClass> -->
         <label>draconic blunt</label>
 		<hasForcefulImpact>false</hasForcefulImpact>

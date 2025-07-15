@@ -251,7 +251,7 @@ namespace DD
             {
                 if (parent != null)
                 {
-                    if (parent.Spawned && parent.Position != null && parent.Map != null)
+                    if (parent.Spawned && parent.Map != null)
                     {
                         return parent.Position.GetFirstThingWithComp<CompHatcher>(parent.Map);
                     }

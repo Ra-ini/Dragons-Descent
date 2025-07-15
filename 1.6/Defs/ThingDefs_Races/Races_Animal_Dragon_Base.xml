@@ -13,7 +13,7 @@
       <hediffGiverSets Inherit="false">
         <li>OrganicDragon</li> <!-- Moved here since its the same on both common and rare dragons -->
       </hediffGiverSets>
-      <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker>
+      <!-- <overrideShouldHaveAbilityTracker>true</overrideShouldHaveAbilityTracker> -->
 
       <!-- Moved here since its the same on both common and rare dragons -->
       <lifeExpectancy>2000</lifeExpectancy>
@@ -24,7 +24,7 @@
 
     <comps>
 
-      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+      <li Class="VEF.AnimalBehaviours.CompProperties_DiseaseImmunity">
         <hediffsToRemove>
           <li>SandInEyes</li>
           <li>DirtInEyes</li>
@@ -33,8 +33,12 @@
         </hediffsToRemove>
         <tickInterval>250</tickInterval>
       </li>
+			<!-- <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
+				<conditionalOnTrainability>false</conditionalOnTrainability>
+				<makeNonFleeingToo>true</makeNonFleeingToo>
+			</li> -->
 <!-- 
-            <li Class="AnimalBehaviours.CompProperties_DigWhenHungry">
+            <li Class="VEF.AnimalBehaviours.CompProperties_DigWhenHungry">
         <customThingToDig>Jeweledrhizomeraw</customThingToDig>
         <customAmountToDig>15</customAmountToDig>
         <timeToDig>50000</timeToDig>
@@ -609,7 +613,6 @@
       <li Class="DD.GenusMarkerExtension">
         <genus>DraconicCommon</genus>
       </li>
-
     </modExtensions>
   </ThingDef>
 
@@ -647,6 +650,8 @@
       <IncomingDamageFactor>0.85</IncomingDamageFactor>
       <MeleeDodgeChance>15</MeleeDodgeChance>
       <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
+			<MaxFlightTime>60</MaxFlightTime>
+			<FlightCooldown>30</FlightCooldown>
     </statBases>
     <uiIconScale>1.75</uiIconScale>
     <race>

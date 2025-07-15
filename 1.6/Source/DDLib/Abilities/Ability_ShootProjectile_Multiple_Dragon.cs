@@ -5,10 +5,10 @@ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
-using VFECore;
-using VFECore.Abilities;
+using VEF;
+using VEF.Abilities;
 using RimWorld.Planet;
-using Ability = VFECore.Abilities.Ability;
+using Ability = VEF.Abilities.Ability;
 
 
 namespace DD

@@ -2,7 +2,7 @@
 using RimWorld.Planet;
 using Verse;
 using Verse.Sound;
-using Ability = VFECore.Abilities.Ability;
+using Ability = VEF.Abilities.Ability;
 
 namespace DD;
 
