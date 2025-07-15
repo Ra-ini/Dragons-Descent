@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Verse;
-using VFECore.Abilities;
+using VEF.Abilities;
 
 namespace DD;
 

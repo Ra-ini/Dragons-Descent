@@ -185,7 +185,7 @@
     <label>dragon's blood addiction</label>
     <description>A bodily dependence to dragon's blood. Long-term presence of dragon's blood has caused the body to rely on it, so the body, especially the brain, now needs it to function properly.\nWithout regular doses of dragon's blood, withdrawal symptoms will begin. However, extended abstinence will force the body to resume normal blood filtration and creation, flushing out the tainted blood.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
-    <causesNeed>Chemical_DragonsBlood</causesNeed>
+    <chemicalNeed>Chemical_DragonsBlood</chemicalNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.04</severityPerDay>

@@ -7,7 +7,7 @@
 //using UnityEngine;
 //using Verse;
 //using Verse.Sound;
-//using VFECore.Abilities;
+//using VEF.Abilities;
 
 //namespace DD
 //{
@@ -27,7 +27,7 @@
 
 //            if (Event.current.type == EventType.MouseDown && Event.current.button == 0)
 //            {
-//                foreach (VFECore.Abilities.AbilityDef abilityDef in DefDatabase<VFECore.Abilities.AbilityDef>.AllDefs)
+//                foreach (VEF.Abilities.AbilityDef abilityDef in DefDatabase<VEF.Abilities.AbilityDef>.AllDefs)
 //                {
 //                    abilityComp.GiveAbility(abilityDef);
 //                    DebugActionsUtility.DustPuffFrom(abilityComp.pawn);

@@ -6,8 +6,8 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using RimWorld.Planet;
-using VFECore.Abilities;
-using Ability = VFECore.Abilities.Ability;
+using VEF.Abilities;
+using Ability = VEF.Abilities.Ability;
 
 namespace DD;
 

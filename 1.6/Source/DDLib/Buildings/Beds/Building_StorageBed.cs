@@ -23,6 +23,8 @@ namespace DD
 
         private static StringBuilder sb = new StringBuilder();
 
+        public bool HaulDestinationEnabled => true;
+
         StorageGroup IStorageGroupMember.Group
         {
             get

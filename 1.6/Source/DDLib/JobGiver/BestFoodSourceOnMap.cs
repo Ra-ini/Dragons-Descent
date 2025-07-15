@@ -480,7 +480,7 @@ public static class FoodUtility_Dragon
             filtered.Clear();
             foreach (Thing item in GenRadial.RadialDistinctThingsAround(getter.Position, getter.Map, 2f, useCenter: true))
             {
-                if (item is Pawn pawn && pawn != getter && pawn.IsNonMutantAnimal && pawn.CurJob != null && pawn.CurJob.def == JobDefOf.Ingest && pawn.CurJob.GetTarget(TargetIndex.A).HasThing)
+                if (item is Pawn pawn && pawn != getter && !pawn.IsMutant && pawn.CurJob != null && pawn.CurJob.def == JobDefOf.Ingest && pawn.CurJob.GetTarget(TargetIndex.A).HasThing)
                 {
                     filtered.Add(pawn.CurJob.GetTarget(TargetIndex.A).Thing);
                 }
@@ -546,7 +546,7 @@ public static class FoodUtility_Dragon
     {
         if (!allowSociallyImproper)
         {
-            bool animalsCare = !getter.IsNonMutantAnimal;
+            bool animalsCare = getter.IsMutant && getter.IsAnimal;
             if (!t.IsSociallyProper(getter) && !t.IsSociallyProper(eater, eater.IsPrisonerOfColony, animalsCare))
             {
                 return false;
@@ -603,7 +603,7 @@ public static class FoodUtility_Dragon
                     num += ThingDefOf.MealSimple.ingestible.optimalityOffsetHumanlikes;
                 }
             }
-            else if (eater.IsNonMutantAnimal)
+            else if (!eater.IsMutant && !eater.IsAnimal)
             {
                 num += foodDef.ingestible.optimalityOffsetFeedingAnimals;
             }

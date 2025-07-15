@@ -19,7 +19,7 @@ public class IncineratorSpray_Dragon : Thing
 
 	private bool AllComplete => numComplete >= NumAlive;
 
-	public override void Tick()
+	protected override void Tick()
 	{
 		int i = 0;
 		for (int count = projectiles.Count; i < count; i++)

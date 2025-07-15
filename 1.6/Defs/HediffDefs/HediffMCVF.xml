@@ -3,7 +3,7 @@
 
 <HediffDef>
     <defName>DD_AcidBuildup</defName>
-    <hediffClass>AnimalBehaviours.Hediff_AcidBuildup</hediffClass>
+    <hediffClass>VEF.AnimalBehaviours.Hediff_AcidBuildup</hediffClass>
     <defaultLabelColor>(0.7, 1.0, 0.7)</defaultLabelColor>
     <label>acid burn</label>
     <lethalSeverity>1</lethalSeverity>

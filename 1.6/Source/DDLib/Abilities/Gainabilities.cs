@@ -5,11 +5,11 @@ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
-using VFECore;
-using VFECore.Abilities;
+using VEF;
+using VEF.Abilities;
 using RimWorld.Planet;
-using Ability = VFECore.Abilities.Ability;
-using AbilityDef = VFECore.Abilities.AbilityDef;
+using Ability = VEF.Abilities.Ability;
+using AbilityDef = VEF.Abilities.AbilityDef;
 
 namespace DD
 {
@@ -24,11 +24,11 @@ namespace DD
     //        if (tickCount >= 500)
     //        {
     //            tickCount = 0;
-    //            foreach (VFECore.Abilities.AbilityDef abilityDef in new VFECore.Abilities.AbilityDef[]
+    //            foreach (VEF.Abilities.AbilityDef abilityDef in new VEF.Abilities.AbilityDef[]
     //            {
     //                // Add the ability definitions you want to give here
-    //                VFECore.Abilities.AbilityDef.MyFirstAbility,
-    //                VFECore.Abilities.AbilityDef.MySecondAbility,
+    //                VEF.Abilities.AbilityDef.MyFirstAbility,
+    //                VEF.Abilities.AbilityDef.MySecondAbility,
     //                // ...
     //            })
     //            {

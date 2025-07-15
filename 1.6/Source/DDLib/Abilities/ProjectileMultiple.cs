@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace DD
 
 {
-	//public class Ability_Shoot : VFECore.Abilities.Ability
+	//public class Ability_Shoot : VEF.Abilities.Ability
 	//{
 	//	AbilityExtension_Roll1D20 modExtension => def.GetModExtension<AbilityExtension_Roll1D20>();
 	//	public override void Cast(params GlobalTargetInfo[] targets)

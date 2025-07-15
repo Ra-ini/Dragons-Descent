@@ -70,7 +70,7 @@
         <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
       </li>
 
-      <li Class="VFECore.QuestNode_GetFaction">
+      <li Class="VEF.QuestNode_GetFaction">
         <allowEnemy>true</allowEnemy>
         <mustBePermanentEnemy>true</mustBePermanentEnemy>
         <storeAs>enemyFaction</storeAs>
@@ -245,7 +245,7 @@
         <mustBeHostileToFactionOf>$asker</mustBeHostileToFactionOf>
       </li>
 
-      <li Class="VFECore.QuestNode_GetFaction">
+      <li Class="VEF.QuestNode_GetFaction">
         <allowEnemy>true</allowEnemy>
         <mustBePermanentEnemy>true</mustBePermanentEnemy>
         <storeAs>enemyFaction</storeAs>

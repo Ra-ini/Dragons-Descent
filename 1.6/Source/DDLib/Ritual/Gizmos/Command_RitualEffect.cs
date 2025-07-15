@@ -150,18 +150,18 @@ namespace DD
                 case RitualTarget.LocalTarget:
                     Find.Targeter.BeginTargeting(ritual.Def.targetingParams, ActivateOnLocalTarget, mouseAttachment: ritual.Def.TargetingOverlay);
                     break;
-                case RitualTarget.GlobalTarget:
-                    CameraJumper.TryJump(CameraJumper.GetWorldTarget(source));
-                    Find.WorldTargeter.BeginTargeting(ActivateOnGlobalTarget, true, extraLabelGetter: GetGlobalLabel, closeWorldTabWhenFinished: true, canSelectTarget: target => ritual.Def.targetingParams.CanTargetGlobal(source, target));
-                    break;
-                case RitualTarget.ForeignTarget:
-                    CameraJumper.TryJump(CameraJumper.GetWorldTarget(source));
-                    Find.WorldTargeter.BeginTargeting(ActivateOnForeignTarget, true, extraLabelGetter: GetGlobalLabel, canSelectTarget: target => ritual.Def.targetingParams.CanTargetGlobal(source, target));
-                    break;
+                    case RitualTarget.GlobalTarget:
+                        CameraJumper.TryJump(CameraJumper.GetWorldTarget(source));
+                        Find.WorldTargeter.BeginTargeting(ActivateOnGlobalTarget, true, extraLabelGetter: GetGlobalLabel, closeWorldTabWhenFinished: true, canSelectTarget: target => ritual.Def.targetingParams.CanTargetGlobal(source, target));
+                        break;
+                    case RitualTarget.ForeignTarget:
+                        CameraJumper.TryJump(CameraJumper.GetWorldTarget(source));
+                        Find.WorldTargeter.BeginTargeting(ActivateOnForeignTarget, true, extraLabelGetter: GetGlobalLabel, canSelectTarget: target => ritual.Def.targetingParams.CanTargetGlobal(source, target));
+                        break;
             }
         }
 
-        private string GetGlobalLabel(GlobalTargetInfo target)
+        private TaggedString GetGlobalLabel(GlobalTargetInfo target)
         {
             string text = ritual.Def.LabelCap;
 
@@ -189,7 +189,7 @@ namespace DD
                 }
             }
 
-            return text;
+            return new TaggedString(text);
         }
 
         protected virtual void ActivateOnNoTarget()

@@ -6,7 +6,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 using RimWorld.Planet;
-using VFECore.Abilities;
+using VEF.Abilities;
 
 
 namespace DD

@@ -5,10 +5,10 @@ using HarmonyLib;
 using RimWorld;
 using UnityEngine;
 using Verse;
-using VFECore;
-using VFECore.Abilities;
+using VEF;
+using VEF.Abilities;
 using RimWorld.Planet;
-using Ability = VFECore.Abilities.Ability;
+using Ability = VEF.Abilities.Ability;
 
 
 namespace DD
@@ -131,11 +131,11 @@ namespace DD
         public override void TargetEffects(params GlobalTargetInfo[] targetInfos)
         {
             base.TargetEffects(targetInfos);
-            var snow = this.def.GetModExtension<AbilityExtension_ShootProjectile_Snow_Dragon>();
-            foreach (GlobalTargetInfo targetInfo in targetInfos)
-            {
-                SnowUtility.AddSnowRadial(targetInfo.Cell, this.pawn.Map, snow?.radius ?? 3f, snow?.depth ?? 1f);
-            }
+            // var snow = this.def.GetModExtension<AbilityExtension_ShootProjectile_Snow_Dragon>();
+            // foreach (GlobalTargetInfo targetInfo in targetInfos)
+            // {
+            //     SnowUtility.AddSnowRadial(targetInfo.Cell, this.pawn.Map, snow?.radius ?? 3f, snow?.depth ?? 1f);
+            // }
         }
     }
 }

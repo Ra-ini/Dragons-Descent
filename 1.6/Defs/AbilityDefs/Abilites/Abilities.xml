@@ -52,7 +52,7 @@
 	</ThingDef> 
 	<ThingDef ParentName="PawnFlyerBase">
 		<defName>DD_DragonJumpFlyer</defName>
-		<thingClass>VFECore.Abilities.AbilityPawnFlyer</thingClass>
+		<thingClass>VEF.Abilities.AbilityPawnFlyer</thingClass>
 		<pawnFlyer>
 			<flightDurationMin>0.5</flightDurationMin>
 			<flightSpeed>15</flightSpeed>

@@ -10,6 +10,9 @@
       Many struggling raiders and tribesmen seek out these generous beasts to ask for a part of
       their hoard, however many are turned down for their greed and hostility. The altar rituals
       effect these dragons.</description>
+    <statBases>
+      <Wildness>0.90</Wildness>
+    </statBases>
     <tools>
       <li>
         <label>left claw</label>
@@ -97,11 +100,11 @@
       </li>
     </tools>
     <comps>
-            <li Class="AnimalBehaviours.CompProperties_Draftable">
+            <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
         <makeNonFleeingToo>true</makeNonFleeingToo>
       </li>
-      <li Class="VFECore.CompProperties_ShieldBubble">
-        <compClass>VFECore.Abilities.CompAbilities</compClass>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+        <compClass>VEF.Abilities.CompAbilities</compClass>
         <blockRangedAttack>False</blockRangedAttack>
         <blockMeleeAttack>False</blockMeleeAttack>
         <showAlways>True</showAlways>
@@ -124,17 +127,18 @@
 
     </verbs>
     <race>
-      <wildness>0.90</wildness>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TropicalRainforest>0.001</TropicalRainforest>
         <AridShrubland>0.002</AridShrubland>
         <Desert>0.002</Desert>
         <ExtremeDesert>0.003</ExtremeDesert>
+				<LavaField MayRequire="Ludeon.RimWorld.Odyssey">0.003</LavaField>
+				<Scarlands MayRequire="Ludeon.RimWorld.Odyssey">0.003</Scarlands>
       </wildBiomes>
     </race>
     <modExtensions>
-      <li Class="DD.WingedFlyerExtension">
+      <!-- <li Class="DD.WingedFlyerExtension">
         <flightSpeed>14</flightSpeed>
         <flyingGraphicData Class="DD.AnimationGraphicData">
           <texPath>Things/Pawn/Animal/Flight</texPath>
@@ -166,7 +170,7 @@
             </variantData>
           </li>
         </variants>
-      </li>
+      </li> -->
       <li Class="DD.CarryCapacityExtension">
         <constant>360</constant>
         <offset>100</offset>
@@ -296,7 +300,7 @@
       <li Class="DD.IncidentSpawnConditionExtension">
         <temperature>31~62</temperature>
       </li>
-      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+      <li Class="VEF.Abilities.PawnKindAbilityExtension">
         <giveAbilities>
           <li>DD_DragonJump</li>
           <li>DD_DragonBreath_Fire</li>
@@ -317,6 +321,9 @@
       are even more valuable due to a popular rumour that their plucked scales can be used as
       currency. This rumour, however, is quite false and extremely deadly. The altar rituals effect
       these dragons.</description>
+    <statBases>
+      <Wildness>0.90</Wildness>
+    </statBases>
     <tools>
       <li>
         <label>left claw</label>
@@ -403,11 +410,11 @@
       </li>
     </tools>
     <comps>
-            <li Class="AnimalBehaviours.CompProperties_Draftable">
+            <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
         <makeNonFleeingToo>true</makeNonFleeingToo>
       </li>
-      <li Class="VFECore.CompProperties_ShieldBubble">
-        <compClass>VFECore.Abilities.CompAbilities</compClass>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+        <compClass>VEF.Abilities.CompAbilities</compClass>
         <blockRangedAttack>False</blockRangedAttack>
         <blockMeleeAttack>False</blockMeleeAttack>
         <showAlways>True</showAlways>
@@ -430,7 +437,6 @@
 
     </verbs>
     <race>
-      <wildness>0.90</wildness>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TemperateForest>0.001</TemperateForest>
@@ -438,6 +444,7 @@
         <Tundra>0.002</Tundra>
         <IceSheet>0.002</IceSheet>
         <SeaIce>0.003</SeaIce>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.003</GlacialPlain>
       </wildBiomes>
     </race>
     <modExtensions>
@@ -603,7 +610,7 @@
       <li Class="DD.IncidentSpawnConditionExtension">
         <temperature>-42~13</temperature>
       </li>
-      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+      <li Class="VEF.Abilities.PawnKindAbilityExtension">
         <giveAbilities>
           <li>DD_DragonJump</li>
           <li>DD_DragonBreath_Fire</li>
@@ -624,6 +631,9 @@
       one solid piece of jade. Some say if you attempt to pluck one of its scales it would instantly
       turn into the purest of jades right in front of your eyes. Others say nothing because they
       tried and have been eaten. The altar rituals effect these dragons.</description>
+    <statBases>
+      <Wildness>0.90</Wildness>
+    </statBases>
     <tools>
       <li>
         <label>left claw</label>
@@ -706,11 +716,11 @@
       </li>
     </tools>
     <comps>
-            <li Class="AnimalBehaviours.CompProperties_Draftable">
+            <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
         <makeNonFleeingToo>true</makeNonFleeingToo>
       </li>
-      <li Class="VFECore.CompProperties_ShieldBubble">
-        <compClass>VFECore.Abilities.CompAbilities</compClass>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+        <compClass>VEF.Abilities.CompAbilities</compClass>
         <blockRangedAttack>False</blockRangedAttack>
         <blockMeleeAttack>False</blockMeleeAttack>
         <showAlways>True</showAlways>
@@ -733,13 +743,14 @@
 
     </verbs>
     <race>
-      <wildness>0.90</wildness>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TemperateSwamp>0.002</TemperateSwamp>
         <TemperateForest>0.004</TemperateForest>
         <BorealForest>0.003</BorealForest>
         <TropicalRainforest>.001</TropicalRainforest>
+        <Grasslands MayRequire="Ludeon.RimWorld.Odyssey">0.003</Grasslands>
+				<Glowforest MayRequire="Ludeon.RimWorld.Odyssey">0.003</Glowforest>
       </wildBiomes>
     </race>
     <modExtensions>
@@ -905,7 +916,7 @@
       <li Class="DD.IncidentSpawnConditionExtension">
         <temperature>7~35</temperature>
       </li>
-      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+      <li Class="VEF.Abilities.PawnKindAbilityExtension">
         <giveAbilities>
           <li>DD_DragonJump</li>
           <li>DD_DragonBreath_Fire</li>
@@ -926,6 +937,9 @@
     <description>True dragons are different compared to other dragons due to walking on all four
       legs instead of tucking the front two behind their giant wings. This is the ultimate dragon,
       respected and feared by all races. The altar rituals effect these dragons.</description>
+    <statBases>
+      <Wildness>0.987</Wildness>
+    </statBases>
     <tools>
       <li>
         <label>left claw</label>
@@ -1052,11 +1066,11 @@
       <ToxicResistance>0</ToxicResistance>
     </statBases> -->
     <comps>
-            <li Class="AnimalBehaviours.CompProperties_Draftable">
+            <li Class="VEF.AnimalBehaviours.CompProperties_Draftable">
         <makeNonFleeingToo>true</makeNonFleeingToo>
       </li>
-      <li Class="VFECore.CompProperties_ShieldBubble">
-        <compClass>VFECore.Abilities.CompAbilities</compClass>
+      <li Class="VEF.Apparels.CompProperties_ShieldBubble">
+        <compClass>VEF.Abilities.CompAbilities</compClass>
         <blockRangedAttack>False</blockRangedAttack>
         <blockMeleeAttack>False</blockMeleeAttack>
         <showAlways>True</showAlways>
@@ -1080,7 +1094,6 @@
     </verbs>
     <race>
       <baseBodySize>4.6</baseBodySize>
-      <wildness>0.987</wildness>
       <leatherDef>True_Dragon_Leather</leatherDef>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
@@ -1091,6 +1104,11 @@
         <AridShrubland>0.0015</AridShrubland>
         <TropicalSwamp>0.001</TropicalSwamp>
         <TemperateSwamp>0.001</TemperateSwamp>
+        <Grasslands MayRequire="Ludeon.RimWorld.Odyssey">0.001</Grasslands>
+				<Glowforest MayRequire="Ludeon.RimWorld.Odyssey">0.001</Glowforest>
+				<LavaField MayRequire="Ludeon.RimWorld.Odyssey">0.001</LavaField>
+				<Scarlands MayRequire="Ludeon.RimWorld.Odyssey">0.001</Scarlands>
+				<GlacialPlain MayRequire="Ludeon.RimWorld.Odyssey">0.001</GlacialPlain>
       </wildBiomes>
     </race>
     <modExtensions>
@@ -1256,7 +1274,7 @@
       <li Class="DD.IncidentSpawnConditionExtension">
         <temperature>-50~80</temperature>
       </li>
-      <li Class="VFECore.Abilities.PawnKindAbilityExtension">
+      <li Class="VEF.Abilities.PawnKindAbilityExtension">
         <giveAbilities>
           <li>DD_DragonJump</li>
           <li>DD_DragonBreath_Fire</li>

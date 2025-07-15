@@ -98,7 +98,7 @@ public class JobGiver_GetFood_Dragon : ThinkNode_JobGiver
             if (building != null)
             {
                 ISlotGroupParent hopperSgp = building as ISlotGroupParent;
-                Job job2 = WorkGiver_CookFillHopper.HopperFillFoodJob(pawn, hopperSgp);
+                Job job2 = WorkGiver_CookFillHopper.HopperFillFoodJob(pawn, hopperSgp, false);
                 if (job2 != null)
                 {
                     return job2;
