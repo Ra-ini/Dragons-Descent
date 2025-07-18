@@ -1,0 +1,95 @@
+<Defs>
+  <ScenarioDef>
+    <defName>DD_Sapient_Dragon</defName>
+    <label>The Wise Dragon</label>
+    <description>Lone and Wise dragon, banished from their flight for being crafty and adaptive. Now on their own to fight for survival.</description>
+    <scenario>
+      <summary>Lone and Wise dragon, banished from their flight for being crafty and adaptive. Now on their own to fight for survival.</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>BS_PlayerTribeXenoPlus</factionDef>
+      </playerFaction>
+      <surfaceLayer>
+        <def>SurfaceLayerFixed</def>
+        <tag>Surface</tag>
+        <layer>Surface</layer>
+        <settingsDef>Surface</settingsDef>
+        <hide>true</hide>
+        <connections>
+          <Orbit MayRequire="Ludeon.RimWorld.Odyssey">
+            <zoomMode>ZoomOut</zoomMode>
+          </Orbit>
+        </connections>
+      </surfaceLayer>
+      <parts>
+        <!-- Config pages -->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+          <def>ConfigurePawnsKindDefs</def>
+          <pawnChoiceCount>8</pawnChoiceCount>
+          <kindCounts>
+            <li>
+              <kindDef>DD_Blue_Dragon</kindDef>
+              <count>1</count>
+              <requiredAtStart>true</requiredAtStart>
+            </li>
+          </kindCounts>
+        </li>
+        <!-- Player starting stuff spawn method-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>Standing</method>
+        </li>
+
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>You have been banished from your flight, unable to turn back, can you fight for your own survival?</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <!-- Scatter some things near player start -->
+        <li Class="ScenPart_ScatterThingsNearPlayerStart">
+          <def>ScatterThingsNearPlayerStart</def>
+          <thingDef>Steel</thingDef>
+          <count>450</count>
+        </li>
+
+        <!-- Scatter some things anywhere -->
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>WoodLog</thingDef>
+          <count>600</count>
+        </li>      
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Steel</thingDef>
+          <count>300</count>
+        </li>
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Pemmican</thingDef>
+          <count>500</count>
+        </li>
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>Pemmican</thingDef>
+          <count>500</count>
+        </li>
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>RawBerries</thingDef>
+          <count>500</count>
+        </li>
+
+        <li Class="ScenPart_ScatterThingsAnywhere">
+          <def>ScatterThingsAnywhere</def>
+          <thingDef>RawBerries</thingDef>
+          <count>500</count>
+        </li>
+        
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>

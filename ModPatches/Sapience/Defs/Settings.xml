@@ -1,0 +1,8 @@
+<Defs>
+  <BigAndSmall.GlobalSettings>
+    <defName>BS_SapientAnimalScenario</defName>
+    <enabledFeatures>
+       <li>SapientAnimals</li>
+    </enabledFeatures>
+  </BigAndSmall.GlobalSettings>
+</Defs>

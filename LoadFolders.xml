@@ -25,6 +25,7 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
-    <!-- <li IfModActive="owlchemist.giddyup">ModPatches/GiddyUp2</li> -->
+    <li IfModActive="owlchemist.giddyup">ModPatches/GiddyUp2</li>
+    <li IfModActive="redmattis.betterprerequisites">ModPatches/Sapience</li>
   </v1.6>
 </loadFolders>
