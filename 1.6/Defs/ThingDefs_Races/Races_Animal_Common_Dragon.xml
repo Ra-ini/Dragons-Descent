@@ -457,6 +457,29 @@
 
     </verbs>
     <race>
+      
+      <canFishForFood>true</canFishForFood>
+      <waterSeeker>true</waterSeeker>
+      <waterCellCost>1</waterCellCost>
+      <specialTrainables>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Comfort</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Dig</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">TerrorRoar</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">WarTrumpet</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">ThrumboRoar</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">Forage</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">EggSpew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">SludgeSpew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledBlinking</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_CycleSeverance</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledDetonation</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledInvisibility</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_Beastmastery</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledCorpseDecay</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_DiggingDiscipline</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_FumeRegulation</li>
+      </specialTrainables>
      
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
@@ -526,22 +549,42 @@
     <combatPower>1260</combatPower>
     <canArriveManhunter>false</canArriveManhunter>
     <ecoSystemWeight>2</ecoSystemWeight>
+    <abilities>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">TerrorRoar</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">WarTrumpet</li>
+        <li MayRequire="Ludeon.Rimworld.Odyssey">ThrumboRoar</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">EggSpew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">SludgeSpew</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledBlinking</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledDetonation</li>
+        <li MayRequire="Ludeon.RimWorld.Odyssey">VEF_ControlledInvisibility</li>
+    </abilities>
+    <moveSpeedFactorByTerrainTag>
+      <li>
+        <key>Water</key>
+        <value>1.25</value>
+      </li>
+    </moveSpeedFactorByTerrainTag>
     <alternateGraphicChance>1</alternateGraphicChance>
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon1</texPath>
+        <swimmingTexPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</swimmingTexPath>
         <weight>0.33</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon2</texPath>
+        <swimmingTexPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</swimmingTexPath>
         <weight>0.11</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon3</texPath>
+        <swimmingTexPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</swimmingTexPath>
         <weight>0.33</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon4</texPath>
+        <swimmingTexPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</swimmingTexPath>
         <weight>0.22</weight>
       </li>
     </alternateGraphics>
@@ -557,6 +600,11 @@
             <offset>(0,0,-0.2)</offset>
           </shadowData>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/CDragon_skeleton</texPath>
           <drawSize>1.5</drawSize>
@@ -573,6 +621,11 @@
             <offset>(0,0,-0.25)</offset>
           </shadowData>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.3</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/CDragon_skeleton</texPath>
           <drawSize>2</drawSize>
@@ -589,6 +642,11 @@
             <offset>(0,0,-0.5)</offset>
           </shadowData>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.2</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/CDragon_skeleton</texPath>
           <drawSize>3.3</drawSize>
@@ -609,6 +667,11 @@
             <offset>(0,0,-0.5)</offset>
           </shadowData>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.4</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/CDragon_skeleton</texPath>
           <drawSize>3.3</drawSize>
@@ -629,6 +692,11 @@
             <offset>(0,0,-0.5)</offset>
           </shadowData>
         </bodyGraphicData>
+        <swimmingGraphicData>
+          <texPath>Things/Pawn/Animal/BLDragon/SwimmingBLDragon1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>4.6</drawSize>
+        </swimmingGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/CDragon_skeleton</texPath>
           <drawSize>4.2</drawSize>
