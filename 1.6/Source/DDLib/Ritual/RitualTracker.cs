@@ -13,12 +13,11 @@ namespace DD
     public class RitualTracker : TrackerComponent, IEnumerable<Ritual>
     {
         private Map map;
-        private float current = 0;
         private int tick = 0;
 
         private Dictionary<string, Ritual> rituals = new Dictionary<string, Ritual>();
 
-        public float Current { get => current; set => current = Mathf.Clamp(value, 0, Max); }
+        public float Current { get => Find.World.GetComponent<WorldComponent_Tracker>().Current; set => Find.World.GetComponent<WorldComponent_Tracker>().Current = Mathf.Clamp(value, 0, Max); }
 
         public float Max => rituals.EnumerableNullOrEmpty() ? 1f : rituals.Values.Max(r => r.Cost);
 
@@ -37,7 +36,7 @@ namespace DD
             this.map = map;
         }
 
-        public bool CanActivate(RitualDef def) => this[def].CanActivate(current);
+        public bool CanActivate(RitualDef def) => this[def].CanActivate(Current);
 
         public void Activate(RitualDef def)
         {
@@ -47,7 +46,7 @@ namespace DD
                 return;
             }
 
-            if (this[def].CanActivate(current))
+            if (this[def].CanActivate(Current))
             {
                 this[def].Activate();
                 Current -= this[def].Cost;
@@ -111,7 +110,6 @@ namespace DD
         public override void ExposeData()
         {
             Scribe_References.Look(ref map, "map");
-            Scribe_Values.Look(ref current, "current", 0);
             Scribe_Values.Look(ref tick, "tick", 0);
             Scribe_Collections.Look(ref rituals, "rituals", LookMode.Value, LookMode.Deep);
 

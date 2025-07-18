@@ -271,6 +271,7 @@
     <Compile Include="Misc\CompTargetableLocation\CompTargetLocationEffect.cs" />
     <Compile Include="Misc\CompTargetableLocation\CompTargetLocationEffect_Teleport.cs" />
     <Compile Include="Components\MapComponent_Tracker.cs" />
+    <Compile Include="Components\WorldComponent_Tracker.cs" />
     <Compile Include="Buildings\Graphics\LayeredGraphicData.cs" />
     <Compile Include="AI\HediffCompProperties_ExitMap.cs" />
     <Compile Include="Regen\Hediff\Comps\HediffCompProperties_RegenSeverityScaling.cs" />
