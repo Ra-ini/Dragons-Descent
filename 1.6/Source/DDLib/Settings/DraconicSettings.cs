@@ -124,12 +124,11 @@ namespace DD
             {
                 foreach (ThingDef def in WildSpawns)
                 {
-                    if (IsAllowedToSpawn(def))
+                    if(IsAllowedToSpawn(def))
                     {
                         def.GetModExtension<SettingControlledExtension_AnimalBiome>()?.Enable(def);
                         def.GetModExtension<SettingControlledExtension_PlantBiome>()?.Enable(def);
-                    }
-                    else
+                    } else
                     {
                         def.GetModExtension<SettingControlledExtension_AnimalBiome>()?.Disable(def);
                         def.GetModExtension<SettingControlledExtension_PlantBiome>()?.Disable(def);
@@ -138,11 +137,10 @@ namespace DD
 
                 foreach (IncidentDef def in IncidentDefs)
                 {
-                    if (IsIncidentEnabled(def))
+                    if(IsIncidentEnabled(def))
                     {
                         def.GetModExtension<SettingControlledExtension_IncidentChance>()?.Enable(def);
-                    }
-                    else
+                    } else
                     {
                         def.GetModExtension<SettingControlledExtension_IncidentChance>()?.Disable(def);
                     }
@@ -167,7 +165,7 @@ namespace DD
 
             Scribe_Collections.Look(ref savedWildSpawns, "WildSpawns", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref savedIncidents, "Incidents", LookMode.Value, LookMode.Value);
-            Scribe_Collections.Look(ref savedSpawnNamedChance, "SpawnNamedChance", LookMode.Value);
+            Scribe_Collections.Look(ref savedSpawnNamedChance, "SpawnNamedChance", LookMode.Value, LookMode.Value);
             Scribe_Values.Look(ref savedTextureForceConvertLegacy, "TextureForceConvertLegacy", false);
             Scribe_Values.Look(ref savedTextureAllowed, "TextureAllowed", TextureChoice.NewOnly);
 
