@@ -17,7 +17,7 @@ namespace DD
             if (pawn.TryGetComp<CompTextureSwapConditional>(out var comp) && comp != null && comp.IsActive && tree.Resolved)
             {
                 Graphic graphic = pawn.ageTracker.CurKindLifeStage.bodyGraphicData.Graphic;
-                return GraphicDatabase.Get<Graphic_Multi>("Things/Pawn/Animal/BLDragon/BLDragon8", graphic.Shader, graphic.drawSize, Color.white, Color.white, graphic.data);
+                return GraphicDatabase.Get<Graphic_Multi>(graphic.path.Replace("Things/Pawn/Animal/","Things/Pawn/Animal/New/"), graphic.Shader, graphic.drawSize, Color.white, Color.white, graphic.data);
             }
             else
             {

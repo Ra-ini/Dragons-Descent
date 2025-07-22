@@ -123,9 +123,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
+    <verbs>
+
+    </verbs>
     <race>
+      <renderTree>DD_Dragon</renderTree>
 
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
@@ -769,13 +773,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
     </verbs>
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TemperateForest>0.0042</TemperateForest>
@@ -1106,13 +1110,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
     </verbs>
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TemperateForest>0.003</TemperateForest>
@@ -1427,15 +1431,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
     </verbs>
-
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <wildBiomes>
         <TemperateForest>0.001</TemperateForest>
         <TropicalRainforest>0.002</TropicalRainforest>
@@ -1767,13 +1769,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
     </verbs>
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <Tundra>0.003</Tundra>
@@ -2106,14 +2108,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
-
     </verbs>
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <TropicalRainforest>0.003</TropicalRainforest>
