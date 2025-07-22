@@ -440,7 +440,6 @@
         <blockMeleeAttack>False</blockMeleeAttack>
         <showAlways>True</showAlways>
       </li>
-
       <li Class="DD.CompProperties_CrossbredEggLayer">
         <eggUnfertilizedDef>EggDragonUnfertilized</eggUnfertilizedDef>
         <eggFertilizedDef>EggBlueDragonFertilized</eggFertilizedDef>
@@ -452,13 +451,13 @@
         <paternalChance>0.5</paternalChance>
         <maternalChance>0.5</maternalChance>
       </li>
-
+      <li Class="DD.CompProperties_TextureSwapConditional"/>
     </comps>
     <verbs>
 
     </verbs>
     <race>
-
+      <renderTree>DD_Dragon</renderTree>
       <useMeatFrom>Red_Dragon</useMeatFrom>
       <wildBiomes>
         <Tundra>0.004</Tundra>

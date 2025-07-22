@@ -20,6 +20,11 @@ namespace DD
         private Dictionary<string, bool> savedIncidents = new Dictionary<string, bool>();
         private Dictionary<string, float> savedSpawnNamedChance = new Dictionary<string, float>();
 
+        private bool savedTextureForceConvertLegacy = false;
+        public bool TextureForceConvertLegacy { get => savedTextureForceConvertLegacy; set => savedTextureForceConvertLegacy = value; }
+        private TextureChoice savedTextureAllowed = TextureChoice.NewOnly;
+        public TextureChoice TextureAllowed { get => savedTextureAllowed; set => savedTextureAllowed = value; }
+        
         public bool IsLoaded => Mod != null && Mod.Content != null;
 
         public IEnumerable<ThingDef> WildSpawns => Mod.Content.AllDefs.OfType<ThingDef>().Where(def => def.HasModExtension<SettingControlledExtension_AnimalBiome>() || def.HasModExtension<SettingControlledExtension_PlantBiome>());
@@ -119,11 +124,12 @@ namespace DD
             {
                 foreach (ThingDef def in WildSpawns)
                 {
-                    if(IsAllowedToSpawn(def))
+                    if (IsAllowedToSpawn(def))
                     {
                         def.GetModExtension<SettingControlledExtension_AnimalBiome>()?.Enable(def);
                         def.GetModExtension<SettingControlledExtension_PlantBiome>()?.Enable(def);
-                    } else
+                    }
+                    else
                     {
                         def.GetModExtension<SettingControlledExtension_AnimalBiome>()?.Disable(def);
                         def.GetModExtension<SettingControlledExtension_PlantBiome>()?.Disable(def);
@@ -132,10 +138,11 @@ namespace DD
 
                 foreach (IncidentDef def in IncidentDefs)
                 {
-                    if(IsIncidentEnabled(def))
+                    if (IsIncidentEnabled(def))
                     {
                         def.GetModExtension<SettingControlledExtension_IncidentChance>()?.Enable(def);
-                    } else
+                    }
+                    else
                     {
                         def.GetModExtension<SettingControlledExtension_IncidentChance>()?.Disable(def);
                     }
@@ -149,6 +156,8 @@ namespace DD
             savedWildSpawns.Clear();
             savedIncidents.Clear();
             savedSpawnNamedChance.Clear();
+            savedTextureForceConvertLegacy = false;
+            savedTextureAllowed = TextureChoice.NewOnly;
         }
 
         public override void ExposeData()
@@ -158,7 +167,9 @@ namespace DD
 
             Scribe_Collections.Look(ref savedWildSpawns, "WildSpawns", LookMode.Value, LookMode.Value);
             Scribe_Collections.Look(ref savedIncidents, "Incidents", LookMode.Value, LookMode.Value);
-            Scribe_Collections.Look(ref savedSpawnNamedChance, "SpawnNamedChance", LookMode.Value, LookMode.Value);
+            Scribe_Collections.Look(ref savedSpawnNamedChance, "SpawnNamedChance", LookMode.Value);
+            Scribe_Values.Look(ref savedTextureForceConvertLegacy, "TextureForceConvertLegacy", false);
+            Scribe_Values.Look(ref savedTextureAllowed, "TextureAllowed", TextureChoice.NewOnly);
 
 
 

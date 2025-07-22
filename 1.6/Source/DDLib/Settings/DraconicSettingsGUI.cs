@@ -27,7 +27,7 @@ namespace DD
 
         private const string Format_Compat_Title = "Setting_Compatibility";
         private const string Format_Compat_Warning = "Setting_Compatibility_Warning";
- 
+
 
         private const string Format_Select = "Setting_Select";
         private const string Format_Deselect = "Setting_Deselect";
@@ -36,6 +36,12 @@ namespace DD
         private const string Format_SpawnsNamed_Title = "Setting_SpawnsNamed";
         private const string Format_SpawnsNamed_Label = "Setting_SpawnsNamed_Title";
         private const string Format_SpawnsNamed_Desc = "Setting_SpawnsNamed_Description";
+
+
+        private const string Format_Texture_Title = "Setting_Texture";
+        private const string Format_Texture_Choice = "Setting_Texture_Choice";
+        private const string Format_Texture_Force_Convert_Legacy = "Setting_Texture_Force_Convert_Legacy";
+        private const string Format_Texture_Force_Convert_Legacy_Desc = "Setting_Texture_Force_Convert_Legacy_Description";
 
         private const float TitleHeight = 32f;
         private const float GapSize = 12f;
@@ -76,12 +82,14 @@ namespace DD
             window.Gap(GapSize);
             DoGUI_IncidentPanel(window);
             window.Gap(GapSize);
+            DoGUI_TexturePanel(window);
+            window.Gap(GapSize);
 
             if (window.ButtonText(Format_Reset.Translate()))
             {
                 settings.Reset();
             }
-            if(totalHeight != window.CurHeight)
+            if (totalHeight != window.CurHeight)
             {
                 totalHeight = window.CurHeight;
             }
@@ -179,7 +187,6 @@ namespace DD
             window.EndSection(panel);
         }
 
- 
         private void DoGUI_SpawnsNamedPanel(Listing_Standard window)
         {
             var genusDefs = DefDatabase<GenusDef>.AllDefsListForReading;
@@ -221,6 +228,59 @@ namespace DD
                     settings.SetSpawnNamedChance(genus, updatedValue);
                 }
             }
+            window.EndSection(panel);
+        }
+
+        private void DoGUI_TexturePanel(Listing_Standard window)
+        {
+            IEnumerable<TextureChoice> choices = Enum.GetValues(typeof(TextureChoice)).Cast<TextureChoice>();
+
+            float panelHeight = TitleHeight + GapSize + ((3 + choices.Count()) * EntryHeight) + Delta;
+
+            Listing_Standard panel = window.BeginSection(panelHeight);
+
+            Listing_Standard titlePanel = panel.BeginSection(TitleHeight);
+            titlePanel.ColumnWidth /= 3;
+            Text.Font = GameFont.Medium;
+            titlePanel.Label(Format_Texture_Title.Translate());
+            Text.Font = GameFont.Small;
+            // titlePanel.NewColumn();
+            // if (titlePanel.ButtonText(Format_Select.Translate()))
+            // {
+            //     settings.TextureAllowed = TextureChoice.Both;
+            //     settings.TextureForceConvertLegacy = true;
+            // }
+            // titlePanel.NewColumn();
+            // if (titlePanel.ButtonText(Format_Deselect.Translate()))
+            // {
+            //     settings.TextureAllowed = TextureChoice.NewTextureOnly;
+            //     settings.TextureForceConvertLegacy = false;
+            // }
+            panel.EndSection(titlePanel);
+
+
+            panel.Label(Format_Texture_Choice.Translate());
+            foreach (TextureChoice item in choices)
+            {
+                string text = Format_Texture_Choice + "." + item;
+                if (panel.RadioButton("    " + text.Translate(), settings.TextureAllowed == item, 0f, Format_Texture_Force_Convert_Legacy_Desc.Translate()))
+                {
+                    settings.TextureAllowed = item;
+                }
+            }
+
+            panel.Gap(GapSize);
+
+            bool value = settings.TextureForceConvertLegacy;
+            bool updatedValue = value;
+
+            panel.CheckboxLabeled(Format_Texture_Force_Convert_Legacy.Translate(), ref updatedValue, Format_Texture_Force_Convert_Legacy_Desc.Translate());
+
+            if (updatedValue != value)
+            {
+                settings.TextureForceConvertLegacy = updatedValue;
+            }
+
             window.EndSection(panel);
         }
     }
