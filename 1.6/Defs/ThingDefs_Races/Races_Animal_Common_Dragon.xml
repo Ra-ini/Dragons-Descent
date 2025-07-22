@@ -181,6 +181,30 @@
               <texPath>Things/Pawn/Animal/BDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BDragon/BDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BDragon/BDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BDragon/BDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BDragon/BDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -210,18 +234,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/BDragon/BDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BDragon/BDragon2</texPath>
-        <weight>0.11</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BDragon/BDragon3</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BDragon/BDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BDragon/BDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BDragon/BDragon2</texPath>
+        <weight>0.11</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BDragon/BDragon3</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BDragon/BDragon4</texPath>
         <weight>0.22</weight>
       </li>
     </alternateGraphics>
@@ -511,6 +551,30 @@
               <texPath>Things/Pawn/Animal/BLDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BLDragon/BLDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BLDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BLDragon/BLDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BLDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BLDragon/BLDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BLDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/BLDragon/BLDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/BLDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -534,18 +598,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon2</texPath>
-        <weight>0.11</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon3</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/BLDragon/BLDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BLDragon/BLDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BLDragon/BLDragon2</texPath>
+        <weight>0.11</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BLDragon/BLDragon3</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/BLDragon/BLDragon4</texPath>
         <weight>0.22</weight>
       </li>
     </alternateGraphics>
@@ -829,6 +909,30 @@
               <texPath>Things/Pawn/Animal/GDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/GDragon/GDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/GDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/GDragon/GDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/GDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/GDragon/GDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/GDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/GDragon/GDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/GDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -851,18 +955,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/GDragon/GDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/GDragon/GDragon2</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/GDragon/GDragon3</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/GDragon/GDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/GDragon/GDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/GDragon/GDragon2</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/GDragon/GDragon3</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/GDragon/GDragon4</texPath>
         <weight>0.22</weight>
       </li>
     </alternateGraphics>
@@ -1167,6 +1287,30 @@
               <texPath>Things/Pawn/Animal/PDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/PDragon/PDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/PDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/PDragon/PDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/PDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/PDragon/PDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/PDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/PDragon/PDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/PDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -1189,18 +1333,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/PDragon/PDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/PDragon/PDragon2</texPath>
-        <weight>0.11</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/PDragon/PDragon3</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/PDragon/PDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/PDragon/PDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/PDragon/PDragon2</texPath>
+        <weight>0.11</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/PDragon/PDragon3</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/PDragon/PDragon4</texPath>
         <weight>0.33</weight>
       </li>
     </alternateGraphics>
@@ -1487,6 +1647,30 @@
               <texPath>Things/Pawn/Animal/RDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/RDragon/RDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/RDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/RDragon/RDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/RDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/RDragon/RDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/RDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/RDragon/RDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/RDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -1510,18 +1694,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/RDragon/RDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/RDragon/RDragon2</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/RDragon/RDragon3</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/RDragon/RDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/RDragon/RDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/RDragon/RDragon2</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/RDragon/RDragon3</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/RDragon/RDragon4</texPath>
         <weight>0.11</weight>
       </li>
     </alternateGraphics>
@@ -1826,6 +2026,30 @@
               <texPath>Things/Pawn/Animal/WDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/WDragon/WDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/WDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/WDragon/WDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/WDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/WDragon/WDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/WDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/WDragon/WDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/WDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -1848,18 +2072,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/WDragon/WDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/WDragon/WDragon2</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/WDragon/WDragon3</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/WDragon/WDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/WDragon/WDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/WDragon/WDragon2</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/WDragon/WDragon3</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/WDragon/WDragon4</texPath>
         <weight>0.22</weight>
       </li>
     </alternateGraphics>
@@ -2163,6 +2403,30 @@
               <texPath>Things/Pawn/Animal/YDragon/Flight/Flight4</texPath>
             </variantData>
           </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/YDragon/YDragon1</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/YDragon/Flight/Flight1</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/YDragon/YDragon2</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/YDragon/Flight/Flight2</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/YDragon/YDragon3</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/YDragon/Flight/Flight3</texPath>
+            </variantData>
+          </li>
+          <li>
+            <variantPath>Things/Pawn/Animal/New/YDragon/YDragon4</variantPath>
+            <variantData>
+              <texPath>Things/Pawn/Animal/New/YDragon/Flight/Flight4</texPath>
+            </variantData>
+          </li>
         </variants>
       </li>
       <li Class="DD.CarryCapacityExtension">
@@ -2185,18 +2449,34 @@
     <alternateGraphics>
       <li>
         <texPath>Things/Pawn/Animal/YDragon/YDragon1</texPath>
-        <weight>0.33</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/YDragon/YDragon2</texPath>
-        <weight>0.22</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/YDragon/YDragon3</texPath>
-        <weight>0.11</weight>
+        <weight>0</weight>
       </li>
       <li>
         <texPath>Things/Pawn/Animal/YDragon/YDragon4</texPath>
+        <weight>0</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/YDragon/YDragon1</texPath>
+        <weight>0.33</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/YDragon/YDragon2</texPath>
+        <weight>0.22</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/YDragon/YDragon3</texPath>
+        <weight>0.11</weight>
+      </li>
+      <li>
+        <texPath>Things/Pawn/Animal/New/YDragon/YDragon4</texPath>
         <weight>0.33</weight>
       </li>
     </alternateGraphics>
