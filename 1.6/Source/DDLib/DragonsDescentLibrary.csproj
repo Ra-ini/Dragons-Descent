@@ -349,6 +349,9 @@
     <Compile Include="Verb\IncineratorSpray_Dragon.cs" />
     <Compile Include="Flight\WingedFlyer.cs" />
     <Compile Include="Flight\WingedFlyerExtension.cs" />
+    <Compile Include="Components\CompAutoGrower.cs" />
+    <Compile Include="Components\Gizmo_AutoGrower.cs" />
+    <Compile Include="Components\CompProperties_AutoGrower.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

@@ -121,6 +121,8 @@
   <ThingDef ParentName="BaseDragon" Name="DragonRaceBase" Abstract="True">
     <!-- Changed ParentName to BaseDragon -->
     <comps>
+      <li Class="DD.CompProperties_AutoGrower">
+      </li>
       <li Class="DD.CompProperties_Scaleable">
         <scaleDef>HardScale</scaleDef>
         <minScaleableLifeStage>AnimalAdult</minScaleableLifeStage>
